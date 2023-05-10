@@ -36,8 +36,8 @@ export class Airport {
   public _securityClient: AxiosInstance;
   public _serverURL: string;
   private _language = "typescript";
-  private _sdkVersion = "1.0.0";
-  private _genVersion = "2.26.1";
+  private _sdkVersion = "1.0.1";
+  private _genVersion = "2.26.2";
   private _globals: any;
 
   constructor(props?: SDKProps) {
