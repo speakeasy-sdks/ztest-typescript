@@ -36,8 +36,8 @@ export class Airport {
   public _securityClient: AxiosInstance;
   public _serverURL: string;
   private _language = "typescript";
-  private _sdkVersion = "1.4.0";
-  private _genVersion = "2.30.0";
+  private _sdkVersion = "1.5.0";
+  private _genVersion = "2.31.0";
   private _globals: any;
 
   constructor(props?: SDKProps) {
@@ -86,6 +86,7 @@ export class Airport {
     );
 
     const headers = { ...reqBodyHeaders, ...config?.headers };
+    headers["Accept"] = "application/json";
     headers[
       "user-agent"
     ] = `speakeasy-sdk/${this._language} ${this._sdkVersion} ${this._genVersion}`;

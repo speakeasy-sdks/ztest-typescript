@@ -2,14 +2,14 @@ configVersion: 1.0.0
 management:
   docChecksum: cf716618a39bc6280b9d730a85d73890
   docVersion: 1.0.0
-  speakeasyVersion: 1.34.0
-  generationVersion: 2.30.0
+  speakeasyVersion: 1.35.0
+  generationVersion: 2.31.0
 generation:
   sdkClassName: Airport
   singleTagPerOp: false
   telemetryEnabled: false
 typescript:
-  version: 1.4.0
+  version: 1.5.0
   author: ztest
   maxMethodParams: 0
   packageName: Airport
