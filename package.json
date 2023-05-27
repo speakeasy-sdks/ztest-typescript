@@ -1,6 +1,6 @@
 {
   "name": "Airport",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "author": "ztest",
   "scripts": {
     "prepare": "tsc --build"

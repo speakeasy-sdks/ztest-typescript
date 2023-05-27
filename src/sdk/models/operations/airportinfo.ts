@@ -7,151 +7,151 @@ import { AxiosResponse } from "axios";
 import { Expose, Type } from "class-transformer";
 
 export class AirportInfoSecurity extends SpeakeasyBase {
-  @SpeakeasyMetadata({
-    data: "security, scheme=true;type=http;subtype=bearer;name=Authorization",
-  })
-  bearerAuth: string;
+    @SpeakeasyMetadata({
+        data: "security, scheme=true;type=http;subtype=bearer;name=Authorization",
+    })
+    bearerAuth: string;
 }
 
 export class AirportInfoRequestBodyVariablesRequest extends SpeakeasyBase {
-  /**
-   * The IATA code of the airport.
-   */
-  @SpeakeasyMetadata()
-  @Expose({ name: "iata" })
-  iata?: string;
+    /**
+     * The IATA code of the airport.
+     */
+    @SpeakeasyMetadata()
+    @Expose({ name: "iata" })
+    iata?: string;
 }
 
 export class AirportInfoRequestBodyVariables extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "request" })
-  @Type(() => AirportInfoRequestBodyVariablesRequest)
-  request?: AirportInfoRequestBodyVariablesRequest;
+    @SpeakeasyMetadata()
+    @Expose({ name: "request" })
+    @Type(() => AirportInfoRequestBodyVariablesRequest)
+    request?: AirportInfoRequestBodyVariablesRequest;
 }
 
 export class AirportInfoRequestBody extends SpeakeasyBase {
-  /**
-   * The GraphQL query for fetching airport information.
-   */
-  @SpeakeasyMetadata()
-  @Expose({ name: "query" })
-  query?: string;
+    /**
+     * The GraphQL query for fetching airport information.
+     */
+    @SpeakeasyMetadata()
+    @Expose({ name: "query" })
+    query?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "variables" })
-  @Type(() => AirportInfoRequestBodyVariables)
-  variables?: AirportInfoRequestBodyVariables;
+    @SpeakeasyMetadata()
+    @Expose({ name: "variables" })
+    @Type(() => AirportInfoRequestBodyVariables)
+    variables?: AirportInfoRequestBodyVariables;
 }
 
 export class AirportInfo200ApplicationJSONDataAirportInfoError extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "description" })
-  description?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "description" })
+    description?: string;
 }
 
 export class AirportInfo200ApplicationJSONDataAirportInfoResultCity extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "iata_code" })
-  iataCode?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "iata_code" })
+    iataCode?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "iata_country_code" })
-  iataCountryCode?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "iata_country_code" })
+    iataCountryCode?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "id" })
-  id?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "id" })
+    id?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "name" })
-  name?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "name" })
+    name?: string;
 }
 
 export class AirportInfo200ApplicationJSONDataAirportInfoResult extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "city" })
-  @Type(() => AirportInfo200ApplicationJSONDataAirportInfoResultCity)
-  city?: AirportInfo200ApplicationJSONDataAirportInfoResultCity;
+    @SpeakeasyMetadata()
+    @Expose({ name: "city" })
+    @Type(() => AirportInfo200ApplicationJSONDataAirportInfoResultCity)
+    city?: AirportInfo200ApplicationJSONDataAirportInfoResultCity;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "city_name" })
-  cityName?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "city_name" })
+    cityName?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "iata_code" })
-  iataCode?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "iata_code" })
+    iataCode?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "iata_country_code" })
-  iataCountryCode?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "iata_country_code" })
+    iataCountryCode?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "icao_code" })
-  icaoCode?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "icao_code" })
+    icaoCode?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "id" })
-  id?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "id" })
+    id?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "latitude" })
-  latitude?: number;
+    @SpeakeasyMetadata()
+    @Expose({ name: "latitude" })
+    latitude?: number;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "longitude" })
-  longitude?: number;
+    @SpeakeasyMetadata()
+    @Expose({ name: "longitude" })
+    longitude?: number;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "name" })
-  name?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "name" })
+    name?: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "time_zone" })
-  timeZone?: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "time_zone" })
+    timeZone?: string;
 }
 
 export class AirportInfo200ApplicationJSONDataAirportInfo extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "error" })
-  @Type(() => AirportInfo200ApplicationJSONDataAirportInfoError)
-  error?: AirportInfo200ApplicationJSONDataAirportInfoError;
+    @SpeakeasyMetadata()
+    @Expose({ name: "error" })
+    @Type(() => AirportInfo200ApplicationJSONDataAirportInfoError)
+    error?: AirportInfo200ApplicationJSONDataAirportInfoError;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "result" })
-  @Type(() => AirportInfo200ApplicationJSONDataAirportInfoResult)
-  result?: AirportInfo200ApplicationJSONDataAirportInfoResult;
+    @SpeakeasyMetadata()
+    @Expose({ name: "result" })
+    @Type(() => AirportInfo200ApplicationJSONDataAirportInfoResult)
+    result?: AirportInfo200ApplicationJSONDataAirportInfoResult;
 }
 
 export class AirportInfo200ApplicationJSONData extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "AirportInfo" })
-  @Type(() => AirportInfo200ApplicationJSONDataAirportInfo)
-  airportInfo?: AirportInfo200ApplicationJSONDataAirportInfo;
+    @SpeakeasyMetadata()
+    @Expose({ name: "AirportInfo" })
+    @Type(() => AirportInfo200ApplicationJSONDataAirportInfo)
+    airportInfo?: AirportInfo200ApplicationJSONDataAirportInfo;
 }
 
 /**
  * Successful response
  */
 export class AirportInfo200ApplicationJSON extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "data" })
-  @Type(() => AirportInfo200ApplicationJSONData)
-  data?: AirportInfo200ApplicationJSONData;
+    @SpeakeasyMetadata()
+    @Expose({ name: "data" })
+    @Type(() => AirportInfo200ApplicationJSONData)
+    data?: AirportInfo200ApplicationJSONData;
 }
 
 export class AirportInfoResponse extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  contentType: string;
+    @SpeakeasyMetadata()
+    contentType: string;
 
-  @SpeakeasyMetadata()
-  statusCode: number;
+    @SpeakeasyMetadata()
+    statusCode: number;
 
-  @SpeakeasyMetadata()
-  rawResponse?: AxiosResponse;
+    @SpeakeasyMetadata()
+    rawResponse?: AxiosResponse;
 
-  /**
-   * Successful response
-   */
-  @SpeakeasyMetadata()
-  airportInfo200ApplicationJSONObject?: AirportInfo200ApplicationJSON;
+    /**
+     * Successful response
+     */
+    @SpeakeasyMetadata()
+    airportInfo200ApplicationJSONObject?: AirportInfo200ApplicationJSON;
 }
