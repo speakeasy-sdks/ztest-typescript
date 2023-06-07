@@ -38,8 +38,8 @@ export class SDKConfiguration {
     serverURL: string;
     serverDefaults: any;
     language = "typescript";
-    sdkVersion = "1.8.0";
-    genVersion = "2.35.3";
+    sdkVersion = "1.8.1";
+    genVersion = "2.35.9";
 
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -47,7 +47,7 @@ export class SDKConfiguration {
 }
 
 /**
- * The Airport Info API is a powerful tool for obtaining detailed information about airports worldwide. This API provides data such as IATA code, ICAO code, airport name, city name, country code, geographical coordinates, and time zone.
+ * Airport Info API: The Airport Info API is a powerful tool for obtaining detailed information about airports worldwide. This API provides data such as IATA code, ICAO code, airport name, city name, country code, geographical coordinates, and time zone.
  */
 export class Airport {
     private sdkConfiguration: SDKConfiguration;

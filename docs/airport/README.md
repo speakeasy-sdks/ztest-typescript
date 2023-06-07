@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Airport Info API is a powerful tool for obtaining detailed information about airports worldwide. This API provides data such as IATA code, ICAO code, airport name, city name, country code, geographical coordinates, and time zone.
+Airport Info API: The Airport Info API is a powerful tool for obtaining detailed information about airports worldwide. This API provides data such as IATA code, ICAO code, airport name, city name, country code, geographical coordinates, and time zone.
 
 ### Available Operations
 
