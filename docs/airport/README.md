@@ -28,7 +28,7 @@ sdk.airport.airportInfo({
     },
   },
 }, {
-  bearerAuth: "YOUR_BEARER_TOKEN_HERE",
+  bearerAuth: "",
 }).then((res: AirportInfoResponse) => {
   if (res.statusCode == 200) {
     // handle response
