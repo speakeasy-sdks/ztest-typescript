@@ -44,9 +44,9 @@ sdk.airportInfo({
 <!-- Start SDK Available Operations -->
 ## Available Resources and Operations
 
-### [Airport SDK](docs/airport/README.md)
+### [Airport SDK](docs/sdks/airport/README.md)
 
-* [airportInfo](docs/airport/README.md#airportinfo) - Get airport information
+* [airportInfo](docs/sdks/airport/README.md#airportinfo) - Get airport information
 <!-- End SDK Available Operations -->
 
 ### Maturity

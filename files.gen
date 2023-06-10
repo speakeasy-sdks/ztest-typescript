@@ -20,5 +20,16 @@ src/sdk/types/rfcdate.ts
 tsconfig.json
 src/sdk/models/operations/airportinfo.ts
 src/sdk/models/operations/index.ts
-docs/airport/README.md
+docs/sdks/airport/README.md
 USAGE.md
+docs/models/operations/airportinfosecurity.md
+docs/models/operations/airportinforequestbodyvariablesrequest.md
+docs/models/operations/airportinforequestbodyvariables.md
+docs/models/operations/airportinforequestbody.md
+docs/models/operations/airportinfo200applicationjsondataairportinfoerror.md
+docs/models/operations/airportinfo200applicationjsondataairportinforesultcity.md
+docs/models/operations/airportinfo200applicationjsondataairportinforesult.md
+docs/models/operations/airportinfo200applicationjsondataairportinfo.md
+docs/models/operations/airportinfo200applicationjsondata.md
+docs/models/operations/airportinfo200applicationjson.md
+docs/models/operations/airportinforesponse.md
